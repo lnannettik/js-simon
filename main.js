@@ -9,17 +9,18 @@ console.log(`JS OK`);
 
 
 
-// let numeriRandom = [];
+let numeriRandom = [];
 
+let random = '';
 // let numeriUtente = [];
 
 
-// for (let i = 0; i < 5; i++) {
-//     random += [getRandomNumber()];   
-//     numeriRandom.push('random')
-//     // console.log(random)   
-//     console.log(random)
-// }    
+for (let i = 0; i < 5; i++) {
+    random += [getRandomNumber()];   
+    numeriRandom.push('random')
+    // console.log(random)   
+    console.log(random)
+}    
 
 
 // timer 30 sec
@@ -54,13 +55,16 @@ const timer = setInterval (() => {
 
 // l’utente deve inserire, uno alla volta, i numeri che ha visto precedentemente, tramite il prompt()
 
+const insert = parseInt(prompt('Te li ricordi? Inserisci uno alla volta i numeri che ti ricordi! Primo...'))
+console.log(insert)
+
 
 
 // ********************
 // FUNZIONI
 // ********************
 
-// function getRandomNumber() {
-//     return Math.round(Math.random() * 100);
-// }
+function getRandomNumber() {
+    return Math.round(Math.random() * 100);
+}
 
