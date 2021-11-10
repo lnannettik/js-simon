@@ -9,22 +9,58 @@ console.log(`JS OK`);
 
 
 
-let numeriRandom = [];
+// let numeriRandom = [];
 
-let numeriUtente = '';
-
-
-for (let i = 0; i < 5; i++) {
-    random += [getRandomNumber()];   
-    numeriRandom.push('random')
-    // console.log(random)   
-}    
-
-console.log(random)
-
-function getRandomNumber() {
-    return Math.round(Math.random() * 100);
-}
+// let numeriUtente = [];
 
 
+// for (let i = 0; i < 5; i++) {
+//     random += [getRandomNumber()];   
+//     numeriRandom.push('random')
+//     // console.log(random)   
+//     console.log(random)
+// }    
+
+
+// timer 30 sec
+
+const countDown = document.getElementById('countDown');
+let second = 2; // **********  30
+
+
+const timer = setInterval (() => {
+    if(second === 0) {
+        // stop the count
+        clearInterval(timer)
+        // add .d-none to counDown
+        document.getElementById('countDown').classList.add('d-none')
+
+    } else {
+        // mostra il conteggio
+        countDown.innerText = second;
+        // sottrai 1 a second
+        second--;
+    } 
+    
+    // if((second <= 3) && (second > 0)) {
+    //     const timerScnd = setInterval (() => {
+    //         document.querySelector('.body').classList.add('bgc-red')
+    //     } 
+        
+    //     , 500);
+    
+}, 1000);
+
+
+// l’utente deve inserire, uno alla volta, i numeri che ha visto precedentemente, tramite il prompt()
+
+
+
+// ********************
+// FUNZIONI
+// ********************
+
+// function getRandomNumber() {
+//     return Math.round(Math.random() * 100);
+// }
 

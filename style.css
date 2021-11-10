@@ -13,6 +13,14 @@ body {
     height: 100vh;
 }
 
-.numeri {
+span {
     font-size: 20vh;
+}
+
+.d-none {
+    display: none;
+}
+
+.bgc-red {
+    background-color: rgba(208, 23, 23, 0.877);
 }
