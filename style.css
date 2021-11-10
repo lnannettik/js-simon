@@ -8,15 +8,22 @@
 
 body {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    /* justify-content: space-around; */
     align-items: center;
     height: 100vh;
 }
 
-span {
+#countDown {
     font-size: 20vh;
+    margin: 5rem;
 }
 
+#display {
+    font-size: 10vh;
+    margin: 5rem;
+
+}
 .d-none {
     display: none;
 }
