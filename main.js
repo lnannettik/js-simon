@@ -25,7 +25,7 @@ document.getElementById('display').innerHTML = `i tuoi numeri sono ${numeriRando
 
 // timer 30 sec
 const countDown = document.getElementById('countDown');
-let second = 30; // **********  30
+let second = 5; // **********************************************************************  mettere 30 per il gioco!
 
 
 const timer = setInterval (() => {
@@ -77,6 +77,7 @@ const timer = setInterval (() => {
             console.log('hai perso! Godo!')
             giudizio.innerHTML = 'hai perso! Godo!';
         } else {
+            console.log('hai vinto! F**k!')
             giudizio.innerHTML = 'hai vinto! F**k!';
         }
            
