@@ -15,14 +15,10 @@ let numeriUtente = [];
 
 // genera i numeri iniziali usando la funzione getRandomNumber()
 for (let i = 0; i < 5; i++) {
-
-
-    // if(!numeriRandom.includes(getRandomNumber() ) {
-    //     numeriRandom.push(getRandomNumber());
-    // }
     
     numeriRandom.push(getRandomNumber())
 }    
+// console.log(numeriRandom);
 
 document.getElementById('display').innerHTML = `i tuoi numeri sono ${numeriRandom}`; 
 
@@ -70,7 +66,12 @@ const timer = setInterval (() => {
 
 
         // Dopo che sono stati inseriti i 5 numeri, il software dice quanti e quali dei numeri da indovinare sono stati individuati.
+        // guessed numbers
+        const guessed = numeriUtente.filter(number => numeriRandom.includes(number))
+        console.log(guessed)
 
+        // risultati
+        risultati.innerHTML = `hai beccato: ${guessed}`;
         
         
     } else {
@@ -92,15 +93,3 @@ const timer = setInterval (() => {
 function getRandomNumber() {
     return Math.round(Math.random() * 100);
 }
-
-
-
-
-
-// guessed numbers
-// const guessed = userNumbers.filter(number => randomNumbers.includes(number))
-
-
-// risuòltati
-// risultati.innerHTML = `hai beccato: ${guessed}`;
-
