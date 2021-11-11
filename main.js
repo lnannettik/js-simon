@@ -15,6 +15,12 @@ let numeriUtente = [];
 
 // genera i numeri iniziali usando la funzione getRandomNumber()
 for (let i = 0; i < 5; i++) {
+
+
+    // if(!numeriRandom.includes(getRandomNumber() ) {
+    //     numeriRandom.push(getRandomNumber());
+    // }
+    
     numeriRandom.push(getRandomNumber())
 }    
 
@@ -86,4 +92,15 @@ const timer = setInterval (() => {
 function getRandomNumber() {
     return Math.round(Math.random() * 100);
 }
+
+
+
+
+
+// guessed numbers
+// const guessed = userNumbers.filter(number => randomNumbers.includes(number))
+
+
+// risuòltati
+// risultati.innerHTML = `hai beccato: ${guessed}`;
 
