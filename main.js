@@ -1,5 +1,5 @@
-// CHECH
-console.log(`JS OK`);
+// // CHECH
+// console.log(`JS OK`);
 
 
 // Visualizzare in pagina 5 numeri casuali. Da lì parte un timer di 30 secondi.
@@ -18,7 +18,7 @@ for (let i = 0; i < 5; i++) {
     
     numeriRandom.push(getRandomNumber())
 }    
-// console.log(numeriRandom);
+console.log(numeriRandom);
 
 document.getElementById('display').innerHTML = `i tuoi numeri sono ${numeriRandom}`; 
 
@@ -72,7 +72,7 @@ const timer = setInterval (() => {
 
         // risultati
         risultati.innerHTML = `hai beccato: ${guessed}`;
-        
+           
         
     } else {
         // mostra il conteggio
