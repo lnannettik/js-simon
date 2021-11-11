@@ -25,7 +25,7 @@ document.getElementById('display').innerHTML = `i tuoi numeri sono ${numeriRando
 
 // timer 30 sec
 const countDown = document.getElementById('countDown');
-let second = 5; // **********  30
+let second = 30; // **********  30
 
 
 const timer = setInterval (() => {
@@ -55,7 +55,7 @@ const timer = setInterval (() => {
         let numeriUtente = []
 
         for (let i = 0; i < 5; i++) {
-            // let numeriUtente = []
+
             const insert = parseInt(prompt('Te li ricordi? Inserisci uno alla volta i numeri che ti ricordi!'))
             numeriUtente.push(insert)
             
@@ -71,7 +71,14 @@ const timer = setInterval (() => {
         console.log(guessed)
 
         // risultati
-        risultati.innerHTML = `hai beccato: ${guessed}`;
+        risultati.innerHTML = `Ne hai beccati ${guessed.length}! Hai beccato: ${guessed}`;
+
+        if (guessed.length !== 5) {
+            console.log('hai perso! Godo!')
+            giudizio.innerHTML = 'hai perso! Godo!';
+        } else {
+            giudizio.innerHTML = 'hai vinto! F**k!';
+        }
            
         
     } else {
